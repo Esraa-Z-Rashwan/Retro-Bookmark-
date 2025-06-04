@@ -31,7 +31,7 @@ transform: translate(-50%);
     border-radius: 12px;
     filter: drop-shadow(4px 4px 4px rgba(64, 37, 17, 0.42));
 
-    top: 30%;
+    top: 70%;
     right: 50%;
     left: 50%;
     transform: translate(-50%);
@@ -55,7 +55,7 @@ letter-spacing: 4px;
     color: rgba(64, 37, 17, 0.50);
     opacity: 1; }
 .data-form #datalistInput{
-    width: 250px;
+    width: 100%;
 }
 .data-form .form-control{
     border: 1px solid #3F2510;
@@ -87,6 +87,7 @@ filter: drop-shadow(2px 2px 0 rgb(233, 95, 24));
 background-color: #FBE6C1;
 color: rgb(64, 37, 17);
 margin-right: 12px;
+margin-bottom: 20px;
 }
 .form-btns #addBtn , #updateBtn {
     filter: drop-shadow(2px 2px 0 rgb(64, 37, 17));
@@ -122,6 +123,9 @@ margin-right: 12px;
 }
 /* ************ End Stickers ************** */
 /* ************ Start Search Box ************** */
+.search-box {
+    margin-top: 450px;
+}
 .search-box input[type="search"] {
     font-family: "Press Start 2P", system-ui;
     font-size: 10px;
@@ -148,6 +152,10 @@ box-shadow: 0 0 0 .2rem rgb(233, 95, 24);
 .search-box ::placeholder {
     color: rgba(64, 37, 17, 0.50);
     opacity: 1;
+    
+}
+.f-row-column{
+    flex-direction: column;
 }
 /* ************ End Search Box ************** */
 /* ************ Start Card ************** */
@@ -248,13 +256,42 @@ color: #FBE6C1;
             background-color: #FBE6C1 !important;
             -webkit-box-shadow: 0 0 0px 1000px #FBE6C1 inset !important;
             transition: background-color 5000s ease-in-out 0s;     }
-@media (max-width: 768px) {
+
+
+
+
+
+/* ************ Start MediaQuery ************** */
+@media (min-width: 768px) {
+    .data-form {
+        top: 50%
+    }
+    .search-box{
+        margin-top: 200px;
+    }
+        .form-btns #clearBtn {
+            margin-bottom: 0;
+        }
+                .data-form #datalistInput {
+                    width: 250px;       }
+}
+@media (min-width: 992px){
+    .data-form{
+        top: 30%
+    }
+    .search-box{
+        margin-top: 40px;
+    }
+}
+@media (min-width: 1200px){
+.f-row-column {
+        flex-direction: row;
+    }
+}
+@media (max-width: 1200px) {
 
     .sticker-one,
     .sticker-two,
     .sticker-three {
         display: none;
     } }
-
-
-    
