@@ -79,6 +79,9 @@ function displayBookmarks(){
           
     }
 
+
+
+    
     rowDataInput.innerHTML = cartona; 
     searchBoxInput.classList.remove('d-none')
 }
