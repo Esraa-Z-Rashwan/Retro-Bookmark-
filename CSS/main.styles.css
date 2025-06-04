@@ -243,6 +243,11 @@ color: #FBE6C1;
 .form-control.is-invalid:focus {
     box-shadow: 0 0 0 .2rem #ED4337; }
 
+        input:-webkit-autofill {
+            border: 0.2rem solid#089404;
+            background-color: #FBE6C1 !important;
+            -webkit-box-shadow: 0 0 0px 1000px #FBE6C1 inset !important;
+            transition: background-color 5000s ease-in-out 0s;     }
 @media (max-width: 768px) {
 
     .sticker-one,
