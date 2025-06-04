@@ -24,7 +24,7 @@ left: 50%;
 transform: translate(-50%);
 }
 .data-form{
-    width: 60%;
+    width: 90%;
     padding: 32px;
     background-color: #F6E2B0;
     border: 2px solid #AE8B71 ;
@@ -264,7 +264,8 @@ color: #FBE6C1;
 /* ************ Start MediaQuery ************** */
 @media (min-width: 768px) {
     .data-form {
-        top: 50%
+        top: 50%;
+        width: 60%;
     }
     .search-box{
         margin-top: 200px;
