@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Bookmark</title>
+    <meta name="description" content="Retro Links Bookmark" />
+    <meta name="keywords" content="Retro, Links, Bookmark" />
+    <link rel="icon" href="./Img/favicon.ico" type="image/x-icon" />
+
+    <!--^ =============== Start Font Links =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!--^ =============== End Font Links =============== -->
+
+    <!--^ =============== Start CSS Links =============== -->
+    <!--& ==== Icons Fontawesome CSS ==== -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!--& ==== Bootstrap CSS ==== -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!--& ==== Main CSS ==== -->
+    <link rel="stylesheet" href="./CSS/main.styles.css" />
+    <!--^ =============== End CSS Links =============== -->
+  </head>
+  <body class="main-bg-clr">
+    <div class="get-info position-relative">
+      <div class="bg-imgs px-3 pt-3">
+        <img src="./Img/bg-img.png" class="w-100" alt="background" />
+      </div>
+      <img src="./Img/logo.png" class="logo-img position-absolute" alt="logo" />
+
+      <img
+        src="./Img/sticker1.png"
+        class="sticker-one position-absolute"
+        alt=""
+      />
+      <img
+        src="./Img/sticker2.png"
+        class="sticker-two position-absolute"
+        alt=""
+      />
+      <img
+        src="./Img/sticker3.png"
+        class="sticker-three position-absolute"
+        alt=""
+      />
+      <div class="data-form position-absolute">
+        <h1
+          class="fs-32 text-uppercase form-title ff-Bungee text-clr-green mb-3"
+        >
+          add a new bookmark
+        </h1>
+        <input
+          oninput="validationForm(this)"
+          class="form-control form-control-sm fw-lighter"
+          type="text"
+          placeholder="Enter bookmark name"
+          aria-label=".form-control-sm example"
+          id="bookmarkName"
+        />
+        <div class="alert alert-danger d-none">
+          Bookmark name must contain 1 to 3 words. <br />
+          At least one word should contain 3 characters long and –contain only
+          letters and numbers.
+        </div>
+        <input
+          oninput="validationForm(this)"
+          class="form-control form-control-sm fw-lighter"
+          type="text"
+          placeholder="Enter bookmark's URL"
+          aria-label=".form-control-sm example"
+          id="bookmarkLink"
+        />
+        <div class="alert alert-danger d-none">
+          Please enter a valid URL (e.g., https://example.com).
+        </div>
+
+        <input
+          oninput="validationForm(this)"
+          class="form-control form-control-sm fw-lighter"
+          type="text"
+          placeholder="Short description of the bookmark"
+          aria-label=".form-control-sm example"
+          id="bookmarkDescription"
+        />
+        <div class="alert alert-danger d-none">
+          Description must be 1 to 80 characters long and –contain only letters,
+          numbers, and spaces.
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex flex-column">
+            <input
+              oninput="validationForm(this)"
+              class="form-control"
+              list="datalistType"
+              id="datalistInput"
+              placeholder="Category"
+            />
+            <div class="alert alert-danger d-none">
+              Please select a valid category from the list.
+            </div>
+          </div>
+          <datalist id="datalistType">
+            <option value="Coding"></option>
+            <option value="Design"></option>
+            <option value="Food Recipes"></option>
+            <option value="Travelling"></option>
+            <option value="Shopping"></option>
+          </datalist>
+
+          <div class="form-btns">
+            <button
+              onclick="clearForm()"
+              type="button"
+              id="clearBtn"
+              class="btn btn-primary"
+            >
+              Remove
+            </button>
+            <button onclick="addBookmark()" id="addBtn" class="btn btn-primary">
+              Save
+            </button>
+            <button
+              onclick="updateBookmark()"
+              id="updateBtn"
+              class="btn btn-primary d-none"
+            >
+              Update
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid my-5">
+      <div class="search-box px-5 mb-4 d-none" id="searchBox">
+        <input
+          oninput="searchBookmark()"
+          class="form-control form-control-sm fw-lighter ms-auto"
+          type="search"
+          placeholder="Search by name/ category"
+          aria-label="Search"
+          id="searchInput"
+        />
+      </div>
+      <div class="row px-5" id="rowData"></div>
+    </div>
+
+    <!--^ =============== Start JS Links =============== -->
+    <!--& ==== Bootstrap JS ==== -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!--& ==== Main JS ==== -->
+    <script src="./JS/index.js"></script>
+    <!--^ =============== End JS Links =============== -->
+  </body>
+</html>

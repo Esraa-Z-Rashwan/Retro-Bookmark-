@@ -1,0 +1,249 @@
+.ff-Bungee{
+    font-family: "Bungee", sans-serif;
+}
+.ff-Press-Start{
+    font-family: "Press Start 2P", system-ui;
+}
+.text-clr-green{
+    color: #2D786D;
+}
+.fs-32{
+    font-size: 32px;
+}
+
+.main-bg-clr{
+    background-color: #F6E2B0;
+}
+
+
+.logo-img{
+    width: 220px;
+top: 5%;
+right: 50%;
+left: 50%;
+transform: translate(-50%);
+}
+.data-form{
+    width: 60%;
+    padding: 32px;
+    background-color: #F6E2B0;
+    border: 2px solid #AE8B71 ;
+    border-radius: 12px;
+    filter: drop-shadow(4px 4px 4px rgba(64, 37, 17, 0.42));
+
+    top: 30%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.form-title{
+    filter: drop-shadow(2px 2px 0 rgb(64, 37,17));
+}
+.data-form input[type="text"] {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: rgb(64, 37, 17);
+}
+.data-form input[list="datalistType"] {
+    font-family: "Press Start 2P", system-ui;
+        font-size: 12px;
+letter-spacing: 4px;
+    color: rgb(64, 37, 17);
+    }
+.data-form ::placeholder {
+    color: rgba(64, 37, 17, 0.50);
+    opacity: 1; }
+.data-form #datalistInput{
+    width: 250px;
+}
+.data-form .form-control{
+    border: 1px solid #3F2510;
+    border-radius: 0;
+    background-color: #FBE6C1;
+    padding: 8px 12px;
+filter: drop-shadow(2px 2px 0 rgb(64, 37, 17));
+margin-bottom: 24px;
+}
+.data-form .form-control-sm {
+    border-radius: 0;
+}
+.data-form .form-control:focus{
+    box-shadow: 0 0 0 .2rem rgb(233, 95, 24);
+}
+/* ^ ********* Form btn ************ */
+.form-btns .btn-primary{
+    width: 200px;
+    border-radius: 0;
+
+font-family: "Press Start 2P", system-ui;
+font-size: 12px;
+padding: 8px 12px;
+letter-spacing: 2px;
+}
+.form-btns #clearBtn{
+filter: drop-shadow(2px 2px 0 rgb(233, 95, 24));
+    border: 1px solid #DF5F18;
+background-color: #FBE6C1;
+color: rgb(64, 37, 17);
+margin-right: 12px;
+}
+.form-btns #addBtn , #updateBtn {
+    filter: drop-shadow(2px 2px 0 rgb(64, 37, 17));
+    border: 1px solid #3F2510;
+    background-color: #DF5F18;
+    color: #FBE6C1;   }
+
+/* ************ Start Stickers ************** */
+.sticker-one{
+    top: 50px;
+    left: 70px;
+    z-index: 0;
+    width: 8.375rem;
+}
+.sticker-two {
+    bottom: 90px;
+    rotate: -20deg;
+    left: 170px;
+    z-index: 2;
+    width: 10.375rem;
+}
+.sticker-three {
+    bottom: 50px;
+    right: 70px;
+    z-index: 0;
+    width: 9.375rem;
+}
+.data-form,
+.search-div,
+.container-fluid {
+    z-index: 1;
+    position: relative;
+}
+/* ************ End Stickers ************** */
+/* ************ Start Search Box ************** */
+.search-box input[type="search"] {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: rgb(64, 37, 17);
+width: calc((100% / 3) - 14px);
+}
+.search-box .form-control {
+    border: 1px solid #3F2510;
+    border-radius: 0;
+    background-color: #FBE6C1;
+    padding: 8px 12px;
+    filter: drop-shadow(2px 2px 0 rgb(64, 37, 17));
+    margin-bottom: 24px;
+}
+
+.search-box .form-control-sm {
+    border-radius: 0;
+}
+
+.form-control:focus{
+box-shadow: 0 0 0 .2rem rgb(233, 95, 24);
+}
+.search-box ::placeholder {
+    color: rgba(64, 37, 17, 0.50);
+    opacity: 1;
+}
+/* ************ End Search Box ************** */
+/* ************ Start Card ************** */
+.bookmark-card{
+    background-color: #F8BF66;
+border: 1px solid #3F2510;
+filter: drop-shadow(4px 4px 0 rgb(64, 37, 17));
+padding: 22px;
+
+}
+.bookmark-card .desc-border{
+border: 1px solid #3F2510;
+    border-radius: 0;
+    background-color: #FBE6C1;
+    padding: 8px;
+    filter: drop-shadow(2px 2px 0 rgb(64, 37, 17));
+    margin-bottom: 14px;
+    min-height: 40px;
+}
+.bookmark-card h3{
+    letter-spacing: 2px;
+    font-size: 10px;
+    color:#2D786D;
+}
+.bookmark-card h2{
+    font-size: 20px;
+    color: rgb(64, 37, 17);
+}
+.bookmark-card p{
+    font-size: 10px;
+color: #2D786D;
+}
+.bookmark-card .desc-border p{
+color: rgba(64, 37, 17, 0.50);
+}
+/* ^ ****** Card Btn ******** */
+.card-btns button a{
+    margin-left: 4px;
+            border-radius: 0;
+    
+            font-family: "Press Start 2P", system-ui;
+           
+            padding: 8px 12px;
+            letter-spacing: 2px;  
+         }
+.card-btns #deleteBtn , #editBtn{
+    filter: drop-shadow(2px 2px 0 rgb(233, 95, 24));
+        border: 1px solid #DF5F18;
+        background-color: #FBE6C1;
+        color: rgb(64, 37, 17);
+        margin-right: 12px;
+border-radius: 0;
+}
+.card-btns a{
+    filter: drop-shadow(2px 2px 0 rgb(64, 37, 17));
+        border: 1px solid #3F2510;
+        background-color: #DF5F18;
+        color: #FBE6C1;
+border-radius: 0;
+padding: 8px 20px;
+}
+.card-btns a span{
+font-family: "Press Start 2P", system-ui;
+    font-size: 10px;
+}
+.btn:hover{
+background-color: #DF5F18;
+border: 1px solid #3F2510;
+color: #FBE6C1;
+}
+
+
+/* ^ ****** valid - invalid ******** */
+.form-control.is-invalid,
+.was-validated .form-control:invalid{
+    border: 0.2rem solid #ED4337;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid{
+    border: 0.2rem solid #089404;
+}
+
+.form-control.is-valid:focus {
+    box-shadow: 0 0 0 .2rem #089404;
+}
+
+.form-control.is-invalid:focus {
+    box-shadow: 0 0 0 .2rem #ED4337; }
+
+
+
+@media (max-width: 768px) {
+
+    .sticker-one,
+    .sticker-two,
+    .sticker-three {
+        display: none;
+    } }
