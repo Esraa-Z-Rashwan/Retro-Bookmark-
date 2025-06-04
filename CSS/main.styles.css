@@ -156,6 +156,7 @@ box-shadow: 0 0 0 .2rem rgb(233, 95, 24);
 border: 1px solid #3F2510;
 filter: drop-shadow(4px 4px 0 rgb(64, 37, 17));
 padding: 22px;
+overflow: hidden;
 
 }
 .bookmark-card .desc-border{
@@ -171,6 +172,9 @@ border: 1px solid #3F2510;
     letter-spacing: 2px;
     font-size: 10px;
     color:#2D786D;
+    max-width: 100%;
+        white-space: normal;
+        word-break: break-word;
 }
 .bookmark-card h2{
     font-size: 20px;
@@ -229,6 +233,7 @@ color: #FBE6C1;
 .form-control.is-valid,
 .was-validated .form-control:valid{
     border: 0.2rem solid #089404;
+    
 }
 
 .form-control.is-valid:focus {
@@ -238,8 +243,6 @@ color: #FBE6C1;
 .form-control.is-invalid:focus {
     box-shadow: 0 0 0 .2rem #ED4337; }
 
-
-
 @media (max-width: 768px) {
 
     .sticker-one,
@@ -247,3 +250,6 @@ color: #FBE6C1;
     .sticker-three {
         display: none;
     } }
+
+
+    
