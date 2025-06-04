@@ -24,8 +24,8 @@ left: 50%;
 transform: translate(-50%);
 }
 .data-form{
-    width: 90%;
     padding: 32px;
+    width: 90%;
     background-color: #F6E2B0;
     border: 2px solid #AE8B71 ;
     border-radius: 12px;
